@@ -83,7 +83,7 @@ const paths = {
     firebase: '/about/Firebase.png',
     react: '/about/react.png',
     tailwindcss: '/about/tailwindcss.png',
-    vscode: '/about/vscode.png',
+    xcodeoriginal: '/about/xcode-original.png',
     code01: '/about/code01.png',
     code02: '/about/code02.png',
     code03: '/about/code03.png',
@@ -124,9 +124,9 @@ const  About = () =>{
                   <motion.img variants={code2Animations} transition={{ ease: "linear", repeat: Infinity, repeatType: 'reverse', duration: 6.5, delay: 0.4 }} className="h-[0.7rem] w-auto absolute top-16" src={paths.code02} alt="Code" />
                   <motion.img variants={code3Animations} transition={{ ease: "linear", repeat: Infinity, repeatType: 'reverse', duration: 6, delay: 0.6 }} className="h-[0.8rem] w-auto absolute top-32" src={paths.code03} alt="Code" />
                   <motion.img variants={aeAnimations} className='w-16 h-auto z-10' src={paths.tailwindcss} alt="Tailwind CSS" />
-                  <motion.img variants={figmaAnimations} className='w-20 h-auto z-20 drop-shadow-sm' src={paths.react} alt="React" />
-                  <motion.img variants={postmanAnimations} className='w-[4.3rem] z-10 h-auto' src={paths.vscode} alt="VSCode" />
-                  <motion.img variants={nodeAnimations} className='w-[4.5rem] z-10 h-auto' src={paths.figma} alt="figma" />
+                  <motion.img variants={figmaAnimations} className='w-16 h-auto z-20 drop-shadow-sm' src={paths.react} alt="React" />
+                  <motion.img variants={postmanAnimations} className='w-[4.3rem] z-10 h-auto' src={paths.xcodeoriginal} alt="VSCode" />
+                  <motion.img variants={nodeAnimations} className='w-16 z-10 h-auto' src={paths.figma} alt="figma" />
                 </motion.div>
                 <div className="flex flex-col w-full px-6 pb-6">
                   <div className='flex flex-row items-center gap-2'>

@@ -78,9 +78,9 @@ const figmaAnimations = {
 const paths = {
     figma: '/about/figma.png',
     postman: '/about/postman.png',
-    laravel: '/about/laravel.png',
-    node: '/about/node.png',
-    firebase: '/about/Firebase.png',
+    laravel: '/about/laravel.svg',
+    prisma: '/about/prisma.svg',
+    mysql: '/about/my-sql.svg',
     react: '/about/react.png',
     tailwindcss: '/about/tailwindcss.png',
     xcodeoriginal: '/about/xcode-original.png',
@@ -106,10 +106,10 @@ const  About = () =>{
             <div className="flex-auto sm:flex-1 flex flex-col gap-4 h-[37.5rem]">
               <div className="group basis-1/2 bg-[#FAFCFF] dark:bg-slate-900 rounded-lg border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 shadow-sm transition duration-500 flex flex-col items-end justify-center overflow-hidden">
                 <motion.div initial={'notHover'} whileHover={'isHover'} className="bg-[url('./images/HabbitBackgroundtop.png')] inset-0 bg-cover bg-bottom h-full w-full flex items-center justify-center">
-                  <motion.img variants={aeAnimations} className='w-16 h-auto' src={paths.laravel} alt="laravel" />
-                  <motion.img variants={figmaAnimations} className='w-16 h-auto z-10' src={paths.firebase} alt="Firebase" />
+                  <motion.img variants={aeAnimations} className='w-[3.6rem] -ml-1 h-auto' src={paths.laravel} alt="laravel" />
+                  <motion.img variants={figmaAnimations} className='w-[3.5rem] ml-1 h-auto z-10' src={paths.mysql} alt="mysql" />
                   <motion.img variants={postmanAnimations} className='w-[4.3rem] h-auto' src={paths.postman} alt="postman" />
-                  <motion.img variants={nodeAnimations} className='w-16 h-auto' src={paths.node} alt="node" />
+                  <motion.img variants={nodeAnimations} className='w-[3.7rem] h-auto' src={paths.prisma} alt="node" />
                 </motion.div>
                 <div className="flex flex-col w-full px-6 pb-6">
                   <div className='flex flex-row items-center gap-2'>

@@ -1,6 +1,10 @@
 'use client'
 import { useTheme } from "next-themes"
 import { Ro4Logo } from "./Icons"
+import { Label } from "../label"
+import { Input } from "../input"
+import { Textarea } from "../textarea"
+import { Button } from "../button"
 
 const Footer = () => {
     const { theme } = useTheme()
@@ -21,18 +25,44 @@ const Footer = () => {
             </span>
         </div>
         <section className=" w-full mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="w-full col-span-1 flex justify-start items-start gap-2">
-                <div
-                className=" w-full flex justify-start items-center gap-2"
-                >
-                    <Ro4Logo
-                    className=" w-5 h-5"
-                    />
-                    <span
-                    className=' text-slate-300/45  '
+            <div className="w-full md:w-2/3 col-span-2 flex flex-col justify-start items-start gap-2">
+                <div className="w-full flex flex-col gap-2 justify-start items-start">
+                    <h1
+                    className="text-2xl font-bold"
                     >
-                        reda ezziani 
-                    </span>
+                    Connect with me 
+                    </h1>
+                    <p
+                    className="opacity-80"
+                    >
+                    let's connect and build something great together
+                    </p>
+                    <form 
+                    className="flex w-full mt-5  flex-col gap-3 justify-start items-start"
+                    >
+                    <Label htmlFor="email">
+                        Email
+                    </Label>   
+                    <Input
+                    className="w-full"
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    />
+                    <Label htmlFor="message">
+                        Message
+                    </Label>
+                    <Textarea
+                    className="w-full"
+                    id="message"
+                    placeholder="Message"
+                    />
+                    <Button
+                    className="w-full bg-gradient-to-r from-sky-500 to-blue-500"
+                    >
+                        Send Message
+                    </Button>
+                    </form>
                 </div>
             </div>
         </section>

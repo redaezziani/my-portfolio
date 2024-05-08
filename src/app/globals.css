@@ -59,3 +59,16 @@
       @apply bg-background text-foreground;
     }
   }
+  @layer components {
+    .move {
+      animation: move 4s infinite forwards;
+    }
+  }
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }

@@ -29,10 +29,10 @@ const MainCard = () => {
             }}
             className=' absolute -right-10 rounded w-2/3 md:w-1/2 z-10 -bottom-10'
              src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1646713633/Screen-Shot-2022-03-03-at-5.58.22-PM_jtca18.png"
-            alt="" srcset="" />
+            alt=""  />
             <img
             className='absolute bottom-0 right-0 z-0 w-full aspect-auto  object-cover'
-            src="/project/grid-bg.png" alt="" srcset="" />
+            src="/project/grid-bg.png" alt=""  />
 
         </ProjectCard>
     )

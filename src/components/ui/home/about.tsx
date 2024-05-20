@@ -92,8 +92,8 @@ const  About = () =>{
     return (
       <>
         <section id="about" className="relative mt-32 sm:mt-0 px-4 z-10 pt-8 pb-8 overflow-hidden">
-          <div className="max-w-6xl mx-auto mt-0 mb-8 sm:mt-32 flex flex-auto sm:flex-1 flex-col sm:flex-row gap-4 h-auto sm:h-[37.5rem]">
-            <div className="flex-auto sm:flex-1 flex flex-col gap-4 h-[37.5rem]">
+          <div className="max-w-6xl mx-auto mt-0 mb-8 sm:mt-32 flex flex-auto sm:flex-1 flex-col sm:flex-row gap-3 h-auto sm:h-[37.5rem]">
+            <div className="flex-auto sm:flex-1 flex flex-col gap-3 h-[37.5rem]">
               <div className="myself basis-2/3 border bg-[url('./images/image-2.jpg')]  inset-0 bg-cover bg-center border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 rounded-lg shadow-sm hover:shadow overflow-hidden"></div>
               <div className="myword group basis-1/3 border border-slate-200 hover:border-slate-300 dark:hover:border-slate-700 dark:border-slate-800 p-2 rounded-lg flex items-center justify-center bg-[url('./images/Background-Monologue.png')] hover:bg-[url('./images/Background-Monologue-1.png')] dark:bg-[url('./images/Background-Monologue-dark.png')] dark:hover:bg-[url('./images/Background-Monologue-dark-1.png')] inset-0 bg-cover bg-center shadow-sm transition duration-500">
                 <div className="text-base leading-7 font-medium text-slate-700 group-hover:text-slate-800 dark:text-slate-200 group-hover:dark:text-slate-50">

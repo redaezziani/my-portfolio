@@ -5,13 +5,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import BentoCard from './first-card';
-import BentoCard2 from './sec-card';
+import BentoCard2 from '@/components/cards/sec-card';
 import MainCard from '@/components/cards/main-card';
+import BentoCard3 from '@/components/cards/therd.card';
+import BentoCard4 from '@/components/cards/fourt-card';
 const Projects = () => {
     return (
         <div
             id='projects'
-            className='max-w-6xl w-full px-3 md:p-0 mx-auto mt-0 mb-8 sm:mt-20 flex flex-auto flex-col  gap-4 sm:min-h-[37.5rem]'
+            className=' max-w-6xl w-full px-3 md:p-0 mx-auto mt-0 mb-8 sm:mt-20 flex flex-auto flex-col  gap-4 sm:min-h-[37.5rem]'
         >
             <div className="flex gap-3 justify-center items-center flex-col">
                 <p
@@ -31,22 +33,22 @@ const Projects = () => {
                     </svg>
                 </span>
             </div>
-            <div className=" mt-5 grid-rows-12   min-h-[45rem] w-full gap-3 grid  md:grid-cols-3 sm:grid-cols-2  grid-cols-1">
-                <BentoCard
-                />
-                
-                <BentoCard2
-                />
-                <BentoCard2
-                />
-               
-                <MainCard/>
-                <ProjectCard
-                    className='col-span-1 row-span-6 h-auto'
-                >
-                </ProjectCard>
-               
-
+            <div className=" mt-5   w-full gap-3 grid  md:grid-cols-3 grid-cols-1 ">
+                <div className="w-full aspect-square col-span-1">
+                    <BentoCard />
+                </div>
+                <div className="w-full aspect-square col-span-1">
+                    <BentoCard2 />
+                </div>
+                <div className="w-full aspect-square col-span-1">
+                    <BentoCard3 />
+                </div>
+                <div className="w-full  aspect-square md:col-span-2">
+                    <MainCard />
+                </div>
+                <div className="w-full aspect-square col-span-1">
+                    <BentoCard4 />
+                </div>
             </div>
         </div>
     )

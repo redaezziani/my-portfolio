@@ -22,12 +22,12 @@ const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(({ classN
             ref={ref}
             onHoverStart={handleIsHovered}
             onHoverEnd={handleIsHovered}
-            className={cn(`w-full cursor-pointer flex justify-start items-start gap-3 flex-col relative`, className)}
+            className={cn(` w-full   cursor-pointer rounded-lg bg-gradient-to-b from-slate-500/40 to-transparent p-px flex justify-start items-start gap-3 flex-col relative`, className)}
             {...props}
         >
             <AnimatePresence>
                 <motion.div
-                    className='group relative rounded-lg w-full h-full  inset-0 bg-cover bg-bottom border border-slate-200  hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 shadow-sm transition duration-500 flex flex-col items-end hover:shadow-2xl hover:shadow-blue-100/20 justify-center overflow-hidden'
+                    className='group rounded-[calc(0.45rem-0.3px)]  relative bg-white dark:bg-slate-950  w-full h-full    bg-bottom border border-slate-200  hover:border-slate-300 dark:border-slate-900 dark:hover:border-slate-800 shadow-sm transition duration-500 flex flex-col items-end hover:shadow-2xl hover:shadow-blue-100/20 justify-center overflow-hidden'
                 >
                     {children}
                 </motion.div>

@@ -146,7 +146,7 @@ const BentoCard4 = () => {
             </div>
             <img
                 className='absolute -bottom-32 -right-32 z-0 w-full aspect-auto  object-cover opacity-20'
-                src="/project/c.png" alt="" srcset="" />
+                src="/project/c.png" alt=""  />
 
         </ProjectCard>
     );

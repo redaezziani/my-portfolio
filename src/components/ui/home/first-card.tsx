@@ -13,7 +13,7 @@ const BentoCard = () => {
     const ref = React.useRef<HTMLDivElement>(null);
     const {theme} = useTheme();
 
-    const [currentTheme, setCurrentTheme] = React.useState<string>(theme);
+    const [currentTheme, setCurrentTheme] = React.useState<string | undefined>(theme);
     useGSAP(() => {
         gsap.to(ref.current, {
             opacity: 1,
@@ -45,7 +45,6 @@ const BentoCard = () => {
     return (
         <ProjectCard
             ref={ref}
-            id='bento-card'
             className='col-span-1   scale-95 relative flex justify-start items-start flex-col  opacity-0 row-span-12 max-h-72 md:max-h-full  md:row-span-5 h-auto'
         >
         <div className="size-20 bottom-0 z-0 absolute dark:bg-slate-100 bg-sky-300/60 blur-[100px] rounded-full" />

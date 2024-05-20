@@ -34,7 +34,6 @@ const BentoCard2 = () => {
     return (
         <ProjectCard
             ref={ref}
-            id='bento-card'
             className='col-span-1   scale-95 relative flex justify-start items-start flex-col  opacity-0 row-span-12 max-h-72 md:max-h-full  md:row-span-5 h-auto'
         >
             <div className="size-20 bottom-0 z-0 absolute bg-slate-100 blur-[100px] rounded-full" />

@@ -7,7 +7,6 @@ const MainCard = () => {
    
     return (
         <ProjectCard
-            id='bento-card'
             className='col-span-2    relative flex justify-start items-start flex-col   row-span-12 max-h-72 md:max-h-full  md:row-span-6 h-auto'
         >
             <div className="size-20 bottom-0 z-0 absolute bg-slate-100 blur-[100px] rounded-full" />

@@ -3,7 +3,8 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence, MotionProps } from 'framer-motion'; // Import MotionProps
 
-interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement>, MotionProps { // Extend MotionProps
+//@ts-ignore
+interface ProjectCardProps  { // Extend MotionProps
     children?: React.ReactNode;
     className?: string;
 }

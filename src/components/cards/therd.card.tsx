@@ -91,7 +91,6 @@ Transform your website into an online powerhouse with SEO expertise. Craft a lig
                <NumberTicker
                     value={100}
                     className=' text-6xl font-semibold'
-                    format={(value) => Math.round(value)}
                 />
                 {' '}
                 %

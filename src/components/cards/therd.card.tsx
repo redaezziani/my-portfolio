@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ProjectCard from '@/components/projects/project-card';
-import { Button } from '../button';
+import { Button } from '@/components/ui/button';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';

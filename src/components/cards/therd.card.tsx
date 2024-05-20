@@ -90,8 +90,6 @@ Transform your website into an online powerhouse with SEO expertise. Craft a lig
                <div className="flex gap-2 justify-center items-center mt-3">
                <NumberTicker
                     value={100}
-                    duration={2}
-                    delay={0}
                     className=' text-6xl font-semibold'
                     format={(value) => Math.round(value)}
                 />

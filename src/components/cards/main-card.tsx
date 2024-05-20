@@ -12,8 +12,6 @@ const MainCard = () => {
         >
             <div className="size-20 bottom-0 z-0 absolute bg-slate-100 blur-[100px] rounded-full" />
             <div className="w-full absolute bottom-0 pointer-events-none  z-10 p-3 h-full flex gap-1 justify-start items-start flex-col">
-            
-
             </div>
         </ProjectCard>
     )

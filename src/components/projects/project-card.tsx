@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { motion, AnimatePresence, MotionProps } from 'framer-motion'; // Import MotionProps
 
-interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement>, MotionProps { // Extend MotionProps
     children?: React.ReactNode;
     className?: string;
 }
+
 
 const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(({ className, children, ...props }, ref) => {
     const [isHovered, setIsHovered] = React.useState(false);

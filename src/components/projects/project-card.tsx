@@ -25,7 +25,7 @@ const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(({ classN
         >
             <AnimatePresence>
                 <motion.div
-                    className='group relative rounded-lg w-full h-full bg-[url("./images/HabbitBackgroundbottom.png")] inset-0 bg-cover bg-bottom border border-slate-200 bg-[#FAFCFF] dark:bg-slate-900 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 shadow-sm transition duration-500 flex flex-col items-end hover:shadow-2xl hover:shadow-blue-100/20 justify-center overflow-hidden'
+                    className='group relative rounded-lg w-full h-full  inset-0 bg-cover bg-bottom border border-slate-200  hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 shadow-sm transition duration-500 flex flex-col items-end hover:shadow-2xl hover:shadow-blue-100/20 justify-center overflow-hidden'
                 >
                     {children}
                 </motion.div>

@@ -4,14 +4,10 @@ import ProjectCard from '@/components/projects/project-card'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import BentoCard from './first-card';
+import BentoCard2 from './sec-card';
+import MainCard from '@/components/cards/main-card';
 const Projects = () => {
-    const [isHovered, setIsHovered] = React.useState(false)
-    const ref = React.useRef(null)
-    const handelIsHovered = () => {
-        console.log('hovered')
-        setIsHovered(!isHovered)
-    }
-
     return (
         <div
             id='projects'
@@ -35,57 +31,21 @@ const Projects = () => {
                     </svg>
                 </span>
             </div>
-            <div className=" mt-5 grid-rows-12   h-[45rem] w-full gap-3 grid  md:grid-cols-3 sm:grid-cols-2  grid-cols-1">
-                <ProjectCard
-                    onHoverStart={handelIsHovered}
-                    onHoverEnd={handelIsHovered}
-                    ref={ref}
-                    className='col-span-1 row-span-6 md:row-span-5 h-auto'
-                >
-                    <div
-
-                        className="w-full relative h-full  gap-2  justify-center text-center items-center flex-col flex">
-
-                        <motion.div
-                            transition={{ duration: 0.3 }}
-                            animate={isHovered ? { scale: 1.03, marginBottom: 120 } : { scale: 1 }}
-
-                            className="w-full relative z-20 max-w-[80%] flex justify-end items-center  rounded-xl  h-14 border border-slate-100/25 backdrop-blur-sm p-2">
-                                 
-                            </motion.div>
-                           
-                        <motion.p
-                            animate={isHovered ? { opacity: 1, y: 20 } : { opacity: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className=' text-sm w-[80%] capitalize font-semibold absolute'
-                        >
-                            the project will be build with the latest technologies
-                        </motion.p>
-                        <div className="flex justify-start w-[80%] items-center gap-2">
-                           
-                        </div>
-                    </div>
-                </ProjectCard>
+            <div className=" mt-5 grid-rows-12   min-h-[45rem] w-full gap-3 grid  md:grid-cols-3 sm:grid-cols-2  grid-cols-1">
+                <BentoCard
+                />
+                
+                <BentoCard2
+                />
+                <BentoCard2
+                />
+               
+                <MainCard/>
                 <ProjectCard
                     className='col-span-1 row-span-6 h-auto'
                 >
                 </ProjectCard>
-                <ProjectCard
-                    className='col-span-1 row-span-6 md:row-span-5 h-auto'
-                >
-                </ProjectCard>
-                <ProjectCard
-                    className='col-span-1 row-span-6 h-auto'
-                >
-                </ProjectCard>
-                <ProjectCard
-                    className='col-span-1 row-span-6 h-auto'
-                >
-                </ProjectCard>
-                <ProjectCard
-                    className='col-span-1 row-span-6 md:row-span-5 h-auto'
-                >
-                </ProjectCard>
+               
 
             </div>
         </div>

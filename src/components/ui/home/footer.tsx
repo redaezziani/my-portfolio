@@ -21,13 +21,13 @@ const Footer = () => {
             if (res?.textStatus === 'error') {
                 toast({
                     title: 'error',
-                    description: res.message,
+                    description: res?.message??'An error occurred',
                     variant: 'error'
                 })
             } else {
                 toast({
                     title: 'success',
-                    description: res.message,
+                    description: res?.message??'Message sent successfully',
                     variant: 'success'
                 })
             }

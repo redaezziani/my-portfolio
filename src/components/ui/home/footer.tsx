@@ -18,7 +18,7 @@ const Footer = () => {
             setIsSending(true)
             if (!email || !message) return
             const res = await sendMeAMessage(email as string, message as string)
-            if (res.textStatus === 'error') {
+            if (res?.textStatus === 'error') {
                 toast({
                     title: 'error',
                     description: res.message,

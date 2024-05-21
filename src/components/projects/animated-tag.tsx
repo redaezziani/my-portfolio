@@ -1,7 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
+interface AnimatedTagProps {
+  text : string;
+}
 
-const AnimatedTag = ({text}:string) => {
+const AnimatedTag = ({text}: AnimatedTagProps) => {
   return (
     <motion.span
       animate={{ y: -10, x: 2 }}

@@ -48,7 +48,7 @@ const BentoCard4 = () => {
             ref={ref}
             className=' col-span-1 w-full relative     flex justify-start items-start flex-col  opacity-0 h-full aspect-square '
         >
-            <div className="size-20 bottom-0 z-0 absolute dark:bg-slate-100 bg-[#1BA0F2] blur-[100px] rounded-full" />
+            <div className="neon" />
             <div className="w-full p-3 h-full flex flex-col gap-2 justify-start items-start">
                 <div className="flex mt-6 flex-col justify-start items-start md:max-w-5xl">
                     <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide">

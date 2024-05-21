@@ -1,23 +1,36 @@
 'use client';
 import { Ro4Logo } from "./Icons"
-import { Label } from "../label"
-import { Input } from "../input"
-import { Textarea } from "../textarea"
+import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 import { sendMeAMessage } from "@/app/actions/resend"
 import FooterLine from "@/components/footer/footer-line"
 import { useState } from "react";
+import { useToast } from '@/components/ui/use-toast';
 
 const Footer = () => {
     const [isSending, setIsSending] = useState(false)
     const [email, setEmail] = useState<string | null>(null)
     const [message, setMessage] = useState<string | null>(null)
+    const { toast } = useToast()
     const handleSendEmail = async () => {
         try {
             setIsSending(true)
-
             if (!email || !message) return
             const res = await sendMeAMessage(email as string, message as string)
-
+            if (res.textStatus === 'error') {
+                toast({
+                    title: 'error',
+                    description: res.message,
+                    variant: 'error'
+                })
+            } else {
+                toast({
+                    title: 'success',
+                    description: res.message,
+                    variant: 'success'
+                })
+            }
         } catch (error) {
             console.error(error)
         }
@@ -56,7 +69,7 @@ const Footer = () => {
                                 className="w-full"
                                 type="email"
                                 id="email"
-                                value={email??""}
+                                value={email ?? ""}
                                 name="email"
                                 placeholder="Email"
                                 onChange={(e) => setEmail(e.target.value)}
@@ -67,7 +80,7 @@ const Footer = () => {
                             <Textarea
                                 className="w-full"
                                 id="message"
-                                value={message??""}
+                                value={message ?? ""}
                                 name="message"
                                 placeholder="Message"
                                 onChange={(e) => setMessage(e.target.value)}
@@ -87,8 +100,8 @@ const Footer = () => {
                                             className=" text-sm font-medium flex justify-center items-center gap-2"
                                         >
                                             <svg
-                                            className=" animate-spin duration-500 ease-in-out"
-                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={20} height={20}  fill={"none"}>
+                                                className=" animate-spin duration-500 ease-in-out"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={20} height={20} fill={"none"}>
                                                 <path d="M12 3V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                                                 <path d="M12 18V21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                                                 <path d="M21 12L18 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />

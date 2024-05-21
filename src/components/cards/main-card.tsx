@@ -24,15 +24,14 @@ const MainCard = () => {
             </div>
             <img
             // add a blue shadow to the image
-            style={{
-                filter: currentTheme === 'dark' ? 'drop-shadow(0px 4px 4px #1BA0F2)' : 'drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.45))'
-            }}
-            className=' absolute -right-10 rounded w-2/3 md:w-1/2 z-10 -bottom-10'
-             src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1646713633/Screen-Shot-2022-03-03-at-5.58.22-PM_jtca18.png"
-            alt=""  />
+            
+            className=' absolute  -right-14 rounded w-full md:w-2/3   z-10 -bottom-10'
+             src={currentTheme !== 'dark' ? "/project/terminal-light.png" : '/project/terminal-dark.png'}
+            alt="terminal-image"  />
+            
             <img
-            className='absolute bottom-0 right-0 z-0 w-full aspect-auto  object-cover'
-            src="/project/grid-bg.png" alt=""  />
+            className='absolute  bottom-0 right-0 z-0 w-full aspect-auto  object-cover'
+            src="/project/grid-bg.png" alt="grid-image"  />
 
         </ProjectCard>
     )

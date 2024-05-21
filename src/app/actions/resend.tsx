@@ -17,8 +17,15 @@ export const sendMeAMessage = async (email: string, message: string) => {
           });
         
         if (error) {
-            return {message: 'An error occurred while sending the email'};
+            return {
+                textStatus: 'error',
+                message: 'your message was not sent successfully'
+            };
         }
+        return {
+            textStatus: 'success',
+            message: 'your message was sent successfully'
+        };
     } catch (error) {
         console.error(error);
     }

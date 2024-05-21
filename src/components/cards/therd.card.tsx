@@ -8,11 +8,12 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import NumberTicker from '../projects/number';
+import AnimatedTag from '../projects/animated-tag';
 
 gsap.registerPlugin(ScrollTrigger);
 const BentoCard3 = () => {
     const ref = React.useRef<HTMLDivElement>(null);
-    const {theme} = useTheme();
+    const { theme } = useTheme();
 
     const [currentTheme, setCurrentTheme] = React.useState<string | undefined>(theme);
     useGSAP(() => {
@@ -24,7 +25,7 @@ const BentoCard3 = () => {
             duration: 1,
             scrollTrigger: {
                 trigger: ref.current,
-                start:" bottom top",
+                start: " bottom top",
                 end: 'top 20%',
                 scrub: 1,
             },
@@ -41,62 +42,49 @@ const BentoCard3 = () => {
     useEffect(() => {
         setCurrentTheme(theme);
     }
-    , [theme]);
+        , [theme]);
 
     return (
         <ProjectCard
             ref={ref}
             className=' col-span-1 w-full relative     flex justify-start items-start flex-col  opacity-0 h-full aspect-square '
         >
-        <div className="size-20 bottom-0 z-0 absolute dark:bg-slate-100 bg-[#1BA0F2] blur-[100px] rounded-full" />
-           <div className="w-full p-3 h-full flex flex-col gap-2 justify-start items-start">
-            <div className="flex mt-6 flex-col justify-start items-start md:max-w-5xl">
-                <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide">
-                 Elevate Your Online Presence with SEO Mastery
-                </span>
-                <span className="text-[11px] mt-3 font-semibold uppercase leading-5 tracking-wide text-gray-500">
-               
-Transform your website into an online powerhouse with SEO expertise. Craft a lightning-fast, user-friendly site that dominates search rankings and drives success.
-                </span>
-            </div>
-           <motion.span
-            animate={{ y: -10,x:2 }}
-            transition={{
-                duration: 1,
-                repeat: Infinity,
-                repeatType: 'reverse',
-                ease: 'easeInOut',
-            }}
+            <div className="neon" />
+            <div className="w-full p-3 h-full flex flex-col gap-2 justify-start items-start">
+                <div className="flex mt-6 flex-col justify-start items-start md:max-w-5xl">
+                    <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide">
+                        Elevate Your Online Presence with SEO Mastery
+                    </span>
+                    <span className="text-[11px] mt-3 font-semibold uppercase leading-5 tracking-wide text-gray-500">
 
-            className="flex items-center"><span className="mt-3 inline-block whitespace-nowrap rounded-full  bg-gradient-to-r from-[#1B8EF2] via-[#1BA0F2] to-[#30BBF2]  shadow hover:bg-gradient-to-r hover:from-[#1B8EF2] hover:via-[#1BA0F2] hover:to-[#30BBF2] px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white">
-            fast and user-friendly
-            </span>
-            <svg className="mr-6  h-8 w-10 [transform:rotateY(180deg)rotateX(0deg)]" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M43.2951 3.47877C43.8357 3.59191 44.3656 3.24541 44.4788 2.70484C44.5919 2.16427 44.2454 1.63433 43.7049 1.52119L43.2951 3.47877ZM4.63031 24.4936C4.90293 24.9739 5.51329 25.1423 5.99361 24.8697L13.8208 20.4272C14.3011 20.1546 14.4695 19.5443 14.1969 19.0639C13.9242 18.5836 13.3139 18.4152 12.8336 18.6879L5.87608 22.6367L1.92723 15.6792C1.65462 15.1989 1.04426 15.0305 0.563943 15.3031C0.0836291 15.5757 -0.0847477 16.1861 0.187863 16.6664L4.63031 24.4936ZM43.7049 1.52119C32.7389 -0.77401 23.9595 0.99522 17.3905 5.28788C10.8356 9.57127 6.58742 16.2977 4.53601 23.7341L6.46399 24.2659C8.41258 17.2023 12.4144 10.9287 18.4845 6.96211C24.5405 3.00476 32.7611 1.27399 43.2951 3.47877L43.7049 1.52119Z" fill="currentColor" className="fill-gray-500  dark:fill-gray-100"></path></svg>
-            </motion.span>
-           </div>
-           <div
-           style={{
-                filter: 'drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25))',
-                backdropFilter: 'blur(4px)',
-           }}
-           className="w-2/3 rounded border z-10 border-bordre p-2 absolute h-52 flex justify-start items-start px-4 flex-col  -bottom-10 -right-6 ">
-            <div className="w-full">
-                <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide">
-                SEO Mastery
-                </span>
-                <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide text-gray-500">
-                and search engine rankings
-                </span>
-               <div className="flex gap-2 justify-center items-center mt-3">
-               <NumberTicker
-                    value={100}
-                    className=' text-6xl font-semibold'
-                />
-                {' '}
-                %
-               </div>
+                        Transform your website into an online powerhouse with SEO expertise. Craft a lightning-fast, user-friendly site that dominates search rankings and drives success.
+                    </span>
+                </div>
+                <AnimatedTag text='fast and user-friendly' />
             </div>
-           </div>
+            <div
+                style={{
+                    filter: 'drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25))',
+                    backdropFilter: 'blur(4px)',
+                }}
+                className="w-2/3 rounded border z-10 border-bordre p-2 absolute h-52 flex justify-start items-start px-4 flex-col  -bottom-10 -right-6 ">
+                <div className="w-full">
+                    <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide">
+                        SEO Mastery
+                    </span>
+                    <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide text-gray-500">
+                        and search engine rankings
+                    </span>
+                    <div className="flex gap-2 justify-center items-center mt-3">
+                        <NumberTicker
+                            value={100}
+                            className=' text-6xl font-semibold'
+                        />
+                        {' '}
+                        %
+                    </div>
+                </div>
+            </div>
         </ProjectCard>
     );
 }

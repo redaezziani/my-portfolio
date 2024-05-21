@@ -4,7 +4,7 @@ import ProjectCard from '@/components/projects/project-card'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import BentoCard from './first-card';
+import BentoCard from '@/components/cards/first-card';
 import BentoCard2 from '@/components/cards/sec-card';
 import MainCard from '@/components/cards/main-card';
 import BentoCard3 from '@/components/cards/therd.card';

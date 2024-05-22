@@ -42,7 +42,7 @@ const Footer = () => {
     }
     return (
         <footer
-            className=' max-w-6xl w-full px-3 md:p-0 mx-auto mt-0 mb-8 sm:mt-20 flex flex-auto sm:flex-1 flex-col  gap-4 h-auto sm:h-[37.5rem]'
+            className=' max-w-6xl w-full px-3 md:p-0 mx-auto mt-0 mb-8  flex flex-auto sm:flex-1 flex-col  gap-4 h-auto sm:h-[37.5rem]'
         >
             <FooterLine />
             <section className=" w-full mt-3 grid  grid-cols-1 md:grid-cols-3 gap-4">

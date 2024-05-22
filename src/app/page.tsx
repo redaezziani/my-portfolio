@@ -1,4 +1,5 @@
 import About from "@/components/ui/home/about";
+import CardsSection from "@/components/ui/home/cards-section";
 import Footer from "@/components/ui/home/footer";
 import Header from "@/components/ui/home/header";
 import Hero from "@/components/ui/home/hero";
@@ -17,7 +18,9 @@ const  HomePage= () => {
      <Hero />
      <About />
      <Projects />
+     <CardsSection />
      <Footer />
+     
     </main>
   );
 }

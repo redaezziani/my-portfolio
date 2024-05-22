@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <div
             id='projects'
-            className=' max-w-6xl w-full px-3 md:p-0 mx-auto mt-0 mb-8 sm:mt-20 flex flex-auto flex-col  gap-4 sm:min-h-[37.5rem]'
+            className=' max-w-6xl bg-transparent  md:max-h-[55rem] h-fit overflow-hidden  w-full px-3 md:p-0 mx-auto mt-0 sm:mt-20 flex flex-auto flex-col  gap-4 '
         >
             <div className="flex gap-3 justify-center items-center flex-col">
                 <p
@@ -33,7 +33,10 @@ const Projects = () => {
                     </svg>
                 </span>
             </div>
-            <div className=" mt-5   w-full gap-3 grid  md:grid-cols-3 grid-cols-1 ">
+            <div className=" mt-5 h-fit bg-transparent overflow-hidden relative    w-full gap-3 grid  md:grid-cols-3 grid-cols-1 ">
+                <div className="size-96 z-0 rounded-full absolute bottom-40 right-60 bg-gradient-to-b from-sky-500/30 to-transparent blur-[120px]">
+
+                </div>
                 <div className="w-full aspect-square col-span-1">
                     <BentoCard />
                 </div>

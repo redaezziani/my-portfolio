@@ -12,10 +12,9 @@ const cardVariants = {
       }
     }
   };
-
 const layerVariants = {
     initial: { y: 0 },
-    hover: (layerIndex) => ({
+    hover: (layerIndex:number) => ({
         y: layerIndex * -10,
         transition: { duration: 0.3 }
     })
@@ -30,12 +29,6 @@ const textVariants = {
     }
   };
   
-// add a interface for the props that will be passed to the MagicCard component :
-/*
- 
-*/
-
-// take a motion.img and add the layoutId prop to it 
 
 interface MagicCardProps {
     children?: React.ReactNode;

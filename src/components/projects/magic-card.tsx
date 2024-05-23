@@ -32,8 +32,11 @@ const textVariants = {
 
 interface MagicCardProps {
     children?: React.ReactNode;
+    title? : string;
+    description?: string;
+    link?: string;
 }
-const MagicCard = ({children}: MagicCardProps) => {
+const MagicCard = ({children, title, description, link}: MagicCardProps) => {
   return (
     <AnimatePresence>
     <motion.div
@@ -65,22 +68,21 @@ const MagicCard = ({children}: MagicCardProps) => {
             custom={2}
             layoutId='card'
         />
-       
         <motion.div
          variants={textVariants}
         className="mt-4 pb-8 flex flex-col gap-2 justify-start items-start px-1">
             <Link
-                href='https://github.com/redaezziani/train-api'
+                href={link}
                 ><motion.h1
                 className='text-sm  text-slate-50'
                 >
-                    tecket api train project 
+                    {title}
                 </motion.h1>
             </Link>
             <motion.p
             className='text-xs line-clamp-2 text-slate-50/40'
             >
-                this project is a ticket api project that will help you to book your ticket and travel
+                {description}
             </motion.p>
         </motion.div>
     </motion.div>

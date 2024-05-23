@@ -9,7 +9,11 @@ const CardsSection = () => {
                 className="w-full absolute   object-cover opacity-40"
                 src="/project/grid-bg.png" alt="" />
             <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-3 sm:grid-cols-2">
-                <MagicCard >
+                <MagicCard 
+                title='Ticketing System'
+                description='A ticketing system for a company to manage their customer support.'
+                link='https://github.com/redaezziani/train-api'
+                >
                     <motion.img
                         className="w-1/2 opacity-60 object-cover"
                         src="/icons/tecket.svg"

@@ -1,6 +1,5 @@
 import LineTow from "@/components/projects/line-2";
 import LineThree from "@/components/projects/line-3";
-import { Button } from "@/components/ui/button";
 import About from "@/components/ui/home/about";
 import CardsSection from "@/components/ui/home/cards-section";
 import Footer from "@/components/ui/home/footer";

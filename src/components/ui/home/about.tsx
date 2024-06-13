@@ -144,7 +144,7 @@ const About = () => {
               ref={CardRef2}
               style={{ opacity: 0 }}
               className="myword group basis-1/3 border border-slate-200 hover:border-slate-300 dark:hover:border-slate-700 dark:border-slate-800 p-2 rounded-lg flex items-center justify-center bg-[url('./images/Background-Monologue.png')] hover:bg-[url('./images/Background-Monologue-1.png')] dark:bg-[url('./images/Background-Monologue-dark.png')] dark:hover:bg-[url('./images/Background-Monologue-dark-1.png')] inset-0 bg-cover bg-center shadow-sm ">
-              <div className="text-base leading-7 font-medium text-slate-700 group-hover:text-slate-800 dark:text-slate-200 group-hover:dark:text-slate-50">
+              <div className=" leading-7 font-medium text-slate-700 group-hover:text-slate-800 dark:text-slate-200 group-hover:dark:text-slate-50">
                 A jovial guy with a passion for design.<br />
                 Enjoys exploring the quirkiest of interests.<br />
                 Loves making new friends with clients and colleagues.<br />
@@ -164,7 +164,7 @@ const About = () => {
               </motion.div>
               <div className="flex flex-col w-full px-6 pb-6">
                 <div className='flex flex-row items-center gap-2'>
-                  <div className="text-base font-semibold text-slate-800 dark:text-slate-200">Back-End Development</div>
+                  <div className="text-base font-medium text-slate-800 dark:text-slate-50">Back-End Development</div>
                 </div>
                 <div className="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-[1.4rem] line-clamp-3">As a Back-End Developer, my passion lies in building the server-side logic that powers web applications.</div>
               </div>
@@ -184,7 +184,7 @@ const About = () => {
               </motion.div>
               <div className="flex flex-col w-full px-6 pb-6">
                 <div className='flex flex-row items-center gap-2'>
-                  <div className="text-base font-semibold text-slate-800 dark:text-slate-200">Front-End Development</div>
+                  <div className="text-base font-medium text-slate-800 dark:text-slate-50">Front-End Development</div>
                 </div>
                 <div className="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-[1.4rem] line-clamp-3"> Only designers understand their own work best. With this in mind, I started exploring how to build web pages to showcase my work perfectly. Slowly, I entered a new field...</div>
               </div>

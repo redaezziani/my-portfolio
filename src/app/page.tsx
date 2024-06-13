@@ -1,4 +1,3 @@
-import Line from "@/components/projects/line";
 import LineTow from "@/components/projects/line-2";
 import LineThree from "@/components/projects/line-3";
 import { Button } from "@/components/ui/button";

@@ -27,7 +27,7 @@ const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(({ classN
         >
             <AnimatePresence>
                 <motion.div
-                    className='group rounded-[calc(0.45rem-0.3px)]  relative bg-white dark:bg-slate-950  w-full h-full    bg-bottom border border-slate-200  hover:border-slate-300 dark:border-slate-900 dark:hover:border-slate-800 shadow-sm transition duration-500 flex flex-col items-end hover:shadow-2xl  justify-center overflow-hidden'
+                    className='group rounded-[calc(0.45rem-0.3px)]  relative bg-white dark:bg-slate-950  w-full h-full    bg-bottom border border-slate-200  hover:border-slate-300 dark:border-slate-900 dark:hover:border-slate-800  transition duration-500 flex flex-col items-end   justify-center overflow-hidden'
                 >
                     {children}
                 </motion.div>

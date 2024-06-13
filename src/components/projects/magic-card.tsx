@@ -36,7 +36,7 @@ interface MagicCardProps {
     description?: string;
     link?: string;
 }
-const MagicCard = ({children, title, description, link}: MagicCardProps) => {
+const MagicCard = ({children, title, description, link=''}: MagicCardProps) => {
   return (
     <AnimatePresence>
     <motion.div
@@ -74,13 +74,13 @@ const MagicCard = ({children, title, description, link}: MagicCardProps) => {
             <Link
                 href={link}
                 ><motion.h1
-                className='text-sm  text-slate-50'
+                className='text-sm text-slate-800  dark:text-slate-50'
                 >
                     {title}
                 </motion.h1>
             </Link>
             <motion.p
-            className='text-xs line-clamp-2 text-slate-50/40'
+            className='text-xs line-clamp-2 text-slate-400 dark:text-slate-50/40'
             >
                 {description}
             </motion.p>

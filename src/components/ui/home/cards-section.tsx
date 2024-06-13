@@ -5,6 +5,7 @@ import MagicCard from "@/components/projects/magic-card";
 const CardsSection = () => {
     return (
         <div className="w-full px-4 md:px-16 mt-10 min-h-96 bg-transparent  relative max-w-7xl flex flex-col gap-3 justify-start items-start">
+            
             <img
                 className="w-full absolute   object-cover opacity-40"
                 src="/project/grid-bg.png" alt="" />
@@ -12,7 +13,7 @@ const CardsSection = () => {
                 <MagicCard 
                 title='Ticketing System'
                 description='A ticketing system for a company to manage their customer support.'
-                link='https://github.com/redaezziani/train-api'
+                link=''
                 >
                     <motion.img
                         className="w-1/2 opacity-60 object-cover"

@@ -7,6 +7,7 @@ import { sendMeAMessage } from "@/app/actions/resend"
 import FooterLine from "@/components/footer/footer-line"
 import { useState } from "react";
 import { useToast } from '@/components/ui/use-toast';
+import { Button } from "../button";
 
 const Footer = () => {
     const [isSending, setIsSending] = useState(false)
@@ -21,13 +22,13 @@ const Footer = () => {
             if (res?.textStatus === 'error') {
                 toast({
                     title: 'error',
-                    description: res?.message??'An error occurred',
+                    description: res?.message ?? 'An error occurred',
                     variant: 'error'
                 })
             } else {
                 toast({
                     title: 'success',
-                    description: res?.message??'Message sent successfully',
+                    description: res?.message ?? 'Message sent successfully',
                     variant: 'success'
                 })
             }
@@ -42,110 +43,101 @@ const Footer = () => {
     }
     return (
         <footer
-            className=' max-w-6xl w-full px-3 md:p-0 mx-auto mt-0 mb-8  flex flex-auto sm:flex-1 flex-col  gap-4 h-auto sm:h-[37.5rem]'
+            className=' max-w-6xl z-20 w-full px-3 md:p-0 mx-auto mt-0 mb-8  flex flex-auto sm:flex-1 flex-col  gap-4 h-auto sm:h-[37.5rem]'
         >
+            <div className="w-full flex justify-center items-center flex-col gap-3 text-center">
+                <h3
+                    className=" text-slate-900 dark:text-slate-50 md:text-4xl font-medium flex justify-center items-center gap-2"
+                >
+                    Lets Have a Chat
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={30} height={30} fill={"none"}>
+                            <path d="M18.9154 11.6997L17.373 15.8314C16.6547 17.7556 16.2955 18.7177 15.709 19.377C14.812 20.3851 13.5203 20.9748 12.1549 20.9995C11.262 21.0156 10.2783 20.6665 8.31091 19.9683C7.27913 19.6022 6.76324 19.4191 6.32165 19.1455C5.64795 18.7281 5.09127 18.1534 4.70166 17.4731C4.44628 17.0272 4.28743 16.5137 3.96974 15.4867L2.56985 10.9613C2.35476 10.266 2.64855 9.51553 3.28412 9.13687C4.11475 8.64198 5.19966 8.96175 5.60953 9.82225L6.5443 11.7848L9.1763 4.73429C9.4501 4.00083 10.2819 3.62265 11.0342 3.88961C11.7865 4.15657 12.1743 4.96757 11.9005 5.70103M11.9005 5.70103L12.5616 3.93029C12.8354 3.19683 13.6672 2.81866 14.4194 3.08562C15.1717 3.35257 15.5596 4.16357 15.2858 4.89704L14.6248 6.66777M11.9005 5.70103L10.4132 9.68518M14.6248 6.66777C14.8986 5.93431 15.7304 5.55613 16.4826 5.82309C17.2349 6.09005 17.6228 6.90105 17.349 7.63451L16.688 9.40524M14.6248 6.66777L13.1374 10.6519M18.5859 12.5854L19.4122 10.372C19.686 9.63852 19.2981 8.82752 18.5458 8.56056C17.7936 8.2936 16.9618 8.67178 16.688 9.40524M16.688 9.40524L15.8617 11.6187" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M21.3307 14C21.877 15.6354 21.0574 17.4263 19.5 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                        </svg>
+                    </span>
+                </h3>
+                <p
+                className="opacity-70 text-slate-900 dark:text-slate-50 text-sm  font-normal flex justify-center items-center gap-2"
+                >
+                    Questions about our services or want to start a project? <br /> Send me a message and I will get back to you as soon as possible
+                </p>
+
+            </div>
             <FooterLine />
-            <section className=" w-full mt-3 grid  grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="w-full md:w-2/3 col-span-2 flex flex-col justify-start items-start gap-2">
-                    <div className="w-full flex flex-col gap-2 justify-start items-start">
-                        <h1
-                            className="text-2xl font-bold"
-                        >
-                            Connect with me
-                        </h1>
-                        <p
-                            className="opacity-80"
-                        >
-                            let's connect and build something great together
-                        </p>
-                        <div
-
-                            className="flex w-full mt-5  flex-col gap-3 justify-start items-start"
-                        >
-                            <Label htmlFor="email">
-                                Email
-                            </Label>
-                            <Input
-                                className="w-full"
-                                type="email"
-                                id="email"
-                                value={email ?? ""}
-                                name="email"
-                                placeholder="Email"
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                            <Label htmlFor="message">
-                                Message
-                            </Label>
-                            <Textarea
-                                className="w-full"
-                                id="message"
-                                value={message ?? ""}
-                                name="message"
-                                placeholder="Message"
-                                onChange={(e) => setMessage(e.target.value)}
-                            />
-                            <button
-                                onClick={handleSendEmail}
-                                className="relative mt-2  w-full inline-block p-px font-semibold leading-6 text-white no-underline bg-gray-800 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900">
-                                <span
-                                    className="absolute inset-0 overflow-hidden rounded-xl">
-                                    <span
-                                        className="absolute inset-0 rounded-md bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(90,146,248,0.3)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                                </span>
-                                <div
-                                    className="relative z-10 w-full flex items-center justify-center px-6 py-2 space-x-2 rounded-md bg-gray-950/50 ring-1 ring-white/10 ">
-                                    {isSending ? (
-                                        <span
-                                            className=" text-sm font-medium flex justify-center items-center gap-2"
-                                        >
-                                            <svg
-                                                className=" animate-spin duration-500 ease-in-out"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={20} height={20} fill={"none"}>
-                                                <path d="M12 3V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                                <path d="M12 18V21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                                <path d="M21 12L18 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                                <path d="M6 12L3 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                                <path d="M18.3635 5.63672L16.2422 7.75804" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                                <path d="M7.75706 16.2422L5.63574 18.3635" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                                <path d="M18.3635 18.3635L16.2422 16.2422" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                                <path d="M7.75706 7.75804L5.63574 5.63672" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                            </svg>
-                                            Sending...
-                                        </span>
-                                    ) : (
-                                        <>
-                                            <span
-                                                className=" text-sm font-medium"
-                                            >
-                                                Send Message
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={20} height={20} color={"#ffffff"} fill={"none"}>
-                                                <path d="M11.922 4.79004C16.6963 3.16245 19.0834 2.34866 20.3674 3.63261C21.6513 4.91656 20.8375 7.30371 19.21 12.078L18.1016 15.3292C16.8517 18.9958 16.2267 20.8291 15.1964 20.9808C14.9195 21.0216 14.6328 20.9971 14.3587 20.9091C13.3395 20.5819 12.8007 18.6489 11.7231 14.783C11.4841 13.9255 11.3646 13.4967 11.0924 13.1692C11.0134 13.0742 10.9258 12.9866 10.8308 12.9076C10.5033 12.6354 10.0745 12.5159 9.21705 12.2769C5.35111 11.1993 3.41814 10.6605 3.0909 9.64127C3.00292 9.36724 2.97837 9.08053 3.01916 8.80355C3.17088 7.77332 5.00419 7.14834 8.6708 5.89838L11.922 4.79004Z" stroke="currentColor" strokeWidth="1.5" />
-                                            </svg>
-                                        </>)}
-                                </div>
-                                <span
-                                    className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-                <div className="w-full flex flex-col gap-2 justify-start items-start">
-                    <div
-                        className=" flex justify-start items-center gap-1"
+            <section className=" w-full  flex justify-center items-center ">
+               <div className=" w-full md:w-[55%] flex mt-5 flex-col gap-3 justify-start items-start ">
+               <div className="w-full gap-4 flex justify-start items-center">
+                <div className="flex w-1/2  flex-col  gap-3">
+                    <Label
+                    className=' opacity-70'
                     >
-                        <Ro4Logo
-                            className="w-5 h-5"
-                        />
-                        <h1
-                            className=" opacity-75"
-                        >
-                            bring your ideas to life with the power of code
-                        </h1>
-                    </div>
+                        First Name
+                    </Label>
+                    <Input
+                        placeholder='John'
+                        className="w-full py-5"
+                    />
                 </div>
+                <div className="flex w-1/2 flex-col  gap-3">
+                    <Label
+                    className=' opacity-70'
+                    >
+                        Last Name
+                    </Label>
+                    <Input
+                        placeholder='Doe'
+                        className="w-full py-5"
+                    />
+                </div>
+               </div>
+               <div className="w-full gap-4 flex justify-start items-center">
+                <div className="flex w-1/2  flex-col  gap-3 ">
+                    <Label
+                    className=' opacity-70'
+                    >
+                        Email
+                    </Label>
+                    <Input
+                        placeholder='johnDoe@gmail.com'
+                        className="w-full py-5"
+                    />
+                </div>
+                <div className="flex w-1/2 flex-col  gap-3">
+                    <Label
+                    className=' opacity-70'
+                    >
+                        Phone Number
+                    </Label>
+                    <Input
+                        type="tel"
+                        placeholder='+234 123 456 7890'
+                        className="w-full py-5"
+                    />
+                </div>
+               </div>
+                <div className="w-full gap-4 flex justify-start items-center">
+                 <div className="flex w-full  flex-col  gap-3">
+                      <Label
+                      className=' opacity-70'
+                      >
+                            Message
+                      </Label>
+                      <Textarea
+                            placeholder='Type your message here...'
+                            className="w-full py-5"
+                      />
+                 </div>
+                </div>
+                <Button
+                    onClick={handleSendEmail}
+                    disabled={isSending}
+                    className="w-full py-5 "
+                    variant={'gradient'}
+                    >
+                    Send Message
+                    </Button>
+               </div>
             </section>
         </footer>
     )

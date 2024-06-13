@@ -1,20 +1,14 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ProjectCard from '@/components/projects/project-card';
-import { Button } from '@/components/ui/button';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
-import NumberTicker from '../projects/number';
 
 gsap.registerPlugin(ScrollTrigger);
 const BentoCard4 = () => {
     const ref = React.useRef<HTMLDivElement>(null);
-    const { theme } = useTheme();
 
-    const [currentTheme, setCurrentTheme] = React.useState<string | undefined>(theme);
     useGSAP(() => {
         gsap.to(ref.current, {
             opacity: 1,
@@ -38,18 +32,17 @@ const BentoCard4 = () => {
 
         });
     }, []);
-    useEffect(() => {
-        setCurrentTheme(theme);
-    }
-        , [theme]);
+
+   
 
     return (
         <ProjectCard
             ref={ref}
             className=' col-span-1 w-full relative     flex justify-start items-start flex-col  opacity-0 h-full aspect-square '
         >
-            <div className="neon" />
-            <div className="w-full p-3 h-full flex flex-col gap-2 justify-start items-start">
+            <div className="neon" />            
+            <div
+            className="w-full  p-3 h-full flex flex-col gap-2 justify-start items-start">
                 <div className="flex mt-6 flex-col justify-start items-start md:max-w-5xl">
                     <span className="text-[11px] font-semibold uppercase leading-5 tracking-wide">
                         latest web technologies

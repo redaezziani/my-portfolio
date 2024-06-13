@@ -22,17 +22,13 @@ const MainCard = () => {
                     </span>
                 </div>
             </div>
-            <img
+            {/* <img
             // add a blue shadow to the image
             
             className=' absolute  -right-14 rounded w-full md:w-2/3   z-10 -bottom-10'
-             src={currentTheme !== 'dark' ? "/project/terminal-light.png" : '/project/terminal-dark.png'}
-            alt="terminal-image"  />
-            
-            <img
-            className='absolute  bottom-0 right-0 z-0 w-full aspect-auto  object-cover'
-            src="/project/grid-bg.png" alt="grid-image"  />
-
+             src={currentTheme !== 'dark' ? "/image-main-card.png" : '/image-main-card.png'}
+            alt="terminal-image" 
+             /> */}
         </ProjectCard>
     )
 }

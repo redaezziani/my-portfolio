@@ -1,7 +1,7 @@
 const LineThree = () => {
     return (
         <div
-            className=' absolute invisible md:visible -rotate-90 -right-10 top-0  flex justify-center items-center  p-2 w-96 h-96'
+            className=' absolute -z-[1]  md:flex -rotate-90 -right-10 top-0  hidden justify-center items-center  p-2 w-96 h-96'
         >
             <svg
                 className=' absolute'

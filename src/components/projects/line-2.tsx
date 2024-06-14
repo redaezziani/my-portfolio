@@ -3,7 +3,7 @@
 const LineTow = () => {
     return (
         <div
-            className=' absolute invisible md:visible rotate-90 -bottom-2 -left-10 -mt-6  flex justify-center items-center  p-2 w-96 h-96'
+            className=' absolute -z-[1] hidden md:flex rotate-90 -bottom-2 -left-10 -mt-6   justify-center items-center  p-2 w-96 h-96'
         >
             <svg
                 className=' absolute'

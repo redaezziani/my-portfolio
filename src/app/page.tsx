@@ -1,3 +1,5 @@
+import BadgeShine from "@/components/projects/badge";
+import { SVGLineGlowAnimateContainer } from "@/components/projects/cool-animation";
 import LineTow from "@/components/projects/line-2";
 import LineThree from "@/components/projects/line-3";
 import About from "@/components/ui/home/about";
@@ -9,7 +11,7 @@ import Projects from "@/components/ui/home/projects";
 import { Toaster } from "@/components/ui/toaster";
 const  HomePage= () => {
   return (
-    <main className=" flex justify-start items-center gap-3 relative flex-col overflow-x-hidden">
+    <main className=" flex justify-start items-center  relative flex-col overflow-x-hidden">
       <LineThree/>
       <LineTow/>
       <div className="w-full absolute top-0">
@@ -22,6 +24,10 @@ const  HomePage= () => {
      <Hero />
     
      <About />
+     <div className=" w-full flex  flex-col justify-center items-center relative ">
+      <SVGLineGlowAnimateContainer />
+     <BadgeShine/>
+     </div>
      <Projects />
      <div className="w-full flex justify-center items-center">
      <div className="flex gap-3 justify-center items-center flex-col">

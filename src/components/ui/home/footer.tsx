@@ -43,7 +43,7 @@ const Footer = () => {
     }
     return (
         <footer
-            className=' max-w-6xl z-20 w-full px-3 md:p-0 mx-auto mt-0 mb-8  flex flex-auto sm:flex-1 flex-col  gap-4 h-auto sm:h-[37.5rem]'
+            className=' max-w-6xl z-40 w-full px-3 md:p-0 mx-auto mt-0 mb-8  flex flex-auto sm:flex-1 flex-col  gap-4 h-auto sm:h-[37.5rem]'
         >
             <div className="w-full flex justify-center items-center flex-col gap-3 text-center">
                 <h3

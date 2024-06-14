@@ -142,7 +142,7 @@ const Header = () => {
                     key={headerTab.link}
                     onFocus={() => setFocused(headerTab.link)}
                     onMouseEnter={() => setFocused(headerTab.link)}
-                    className="text-sm px-4 sm:px-3 py-2 text-slate-900 hover:text-slate-800 dark:text-slate-100 dark:hover:text-slate-200 transition duration-500 relative"
+                    className="text-sm px-4 cursor-pointer sm:px-3 py-2 text-slate-900 hover:text-slate-800 dark:text-slate-100 dark:hover:text-slate-200 transition duration-500 relative"
                     to={location === "/" ? headerTab.link : "/" + headerTab.link}
                     smooth={true}
                     duration={500}

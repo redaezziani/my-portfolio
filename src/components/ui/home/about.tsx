@@ -125,7 +125,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <section id="about" className="relative mt-10  sm:-mt-28 px-4 z-10 pt-8 pb-8 overflow-hidden">
+      <section id="about" className="relative -mt-10  sm:-mt-28 px-4 z-10 pt-8 pb-8 overflow-hidden">
         <div className="max-w-6xl mx-auto mt-0 mb-8 sm:mt-32 flex flex-auto sm:flex-1 flex-col sm:flex-row gap-3 h-auto sm:h-[37.5rem]">
           <div className="flex-auto sm:flex-1 flex flex-col gap-3 h-[37.5rem]">
             <div

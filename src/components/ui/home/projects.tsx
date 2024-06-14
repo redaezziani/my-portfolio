@@ -1,8 +1,4 @@
 'use client';
-import { motion, AnimatePresence } from 'framer-motion'
-import ProjectCard from '@/components/projects/project-card'
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import BentoCard from '@/components/cards/first-card';
 import BentoCard2 from '@/components/cards/sec-card';
@@ -13,7 +9,7 @@ const Projects = () => {
     return (
         <div
             id='projects'
-            className=' max-w-6xl bg-transparent  md:max-h-[55rem] h-fit overflow-hidden  w-full px-3 md:p-0 mx-auto mt-0 sm:mt-20 flex flex-auto flex-col  gap-4 '
+            className=' max-w-6xl -z-1  touch-none bg-transparent  md:max-h-[55rem] h-fit overflow-hidden  w-full px-4 md:p-0 md:px-1 mx-auto mt-10 flex flex-auto flex-col  gap-4 '
         >
             <div className=" mt-5 h-fit bg-transparent overflow-hidden relative    w-full gap-3 grid  md:grid-cols-3 grid-cols-1 ">
                 <div className="size-96 z-0 rounded-full absolute bottom-40 right-60 bg-gradient-to-b from-sky-500/30 to-transparent blur-[120px]">

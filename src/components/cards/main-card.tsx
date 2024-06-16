@@ -1,21 +1,12 @@
-
-
 import ProjectCard from '@/components/projects/project-card';
 const MainCard = () => {
-    return (
-        <ProjectCard
-            className='col-span-2    relative flex justify-start items-start flex-col max-h-[23.5rem] h-full'
-        >
-            <div className="w-full bg-[url('./images/HabbitBackgroundtop.png')] inset-0 bg-cover absolute"/>
+  return (
+    <ProjectCard className='relative touch-none select-none col-span-2 flex h-full max-h-[23.5rem] flex-col items-start justify-start'>
 
-            
-            <div className="size-20 bottom-0 z-0 absolute dark:bg-slate-100 bg-[#1BA0F2] blur-[100px] rounded-full" />
-            <div className="w-full p-3 h-full flex flex-col gap-2 justify-start items-start">
-                
-            </div>
-            
-        </ProjectCard>
-    )
-}
+      <div className='absolute bottom-0 z-0 size-20 rounded-full bg-[#1BA0F2] blur-[100px] dark:bg-slate-100' />
+      <div className='flex h-full w-full flex-col items-start justify-start gap-2 p-3'></div>
+    </ProjectCard>
+  );
+};
 
-export default MainCard
+export default MainCard;

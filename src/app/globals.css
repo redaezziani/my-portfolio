@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+*{
+  scroll-behavior: smooth;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -71,133 +76,48 @@
   }
 }
 
-.neon{
-  @apply size-20 bottom-0 z-0 absolute dark:bg-slate-100 bg-[#1BA0F2] blur-[100px] rounded-full;
+.neon {
+  @apply absolute bottom-0 z-0 size-20 rounded-full bg-[#1BA0F2] blur-[100px] dark:bg-slate-100;
 }
 
-.color{
+.color {
   color: hsl(203 89% 53%);
 }
 
 @keyframes slidemask {
   from {
-    x:-100%;
+    x: -100%;
   }
-  to{
-    x:100%;
+  to {
+    x: 100%;
   }
 }
 
-.mask-rect{
+.mask-rect {
   animation: slidemask 6s ease infinite;
 }
 
-.mask-rect-2{
-  animation: slidemask 10s ease infinite ;
+.mask-rect-2 {
+  animation: slidemask 10s ease infinite;
 }
 
 
+/*
+let s make the scroll bar look good by add some rounded corners and a nice color and also make the hover effect
+*/
 
+/* width */
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  width: 10px;
 }
 
-/* Optional: show position: */
-
-@import '@radix-ui/colors/black-alpha.css';
-
-
-
-.TooltipContent {
-  border-radius: var(--radius);
-  padding: 10px 15px;
-  font-size: 15px;
-  line-height: 1;
-  color: #1BA0F2;
-  background-color: white;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
-  user-select: none;
-  animation-duration: 400ms;
-  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform, opacity;
-}
-.TooltipContent[data-state='delayed-open'][data-side='top'] {
-  animation-name: slideDownAndFade;
-}
-.TooltipContent[data-state='delayed-open'][data-side='right'] {
-  animation-name: slideLeftAndFade;
-}
-.TooltipContent[data-state='delayed-open'][data-side='bottom'] {
-  animation-name: slideUpAndFade;
-}
-.TooltipContent[data-state='delayed-open'][data-side='left'] {
-  animation-name: slideRightAndFade;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.TooltipArrow {
-  fill: white;
-}
+/* Handle */
 
-.IconButton {
-  font-family: inherit;
-  border-radius: 100%;
-  height: 35px;
-  width: 35px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--violet-11);
-  background-color: white;
-  box-shadow: 0 2px 10px var(--black-a7);
-}
-.IconButton:hover {
-  background-color: var(--violet-3);
-}
-.IconButton:focus {
-  box-shadow: 0 0 0 2px black;
-}
-
-@keyframes slideUpAndFade {
-  from {
-    opacity: 0;
-    transform: translateY(2px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideRightAndFade {
-  from {
-    opacity: 0;
-    transform: translateX(-2px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideDownAndFade {
-  from {
-    opacity: 0;
-    transform: translateY(-2px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideLeftAndFade {
-  from {
-    opacity: 0;
-    transform: translateX(2px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
 }

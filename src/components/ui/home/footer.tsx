@@ -80,23 +80,23 @@ const Footer = () => {
           <div className='flex w-full items-center justify-start gap-4'>
             <div className='flex w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>First Name</Label>
-              <Input placeholder='John' className='w-full py-5' />
+              <Input  className='w-full py-5' />
             </div>
             <div className='flex w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>Last Name</Label>
-              <Input placeholder='Doe' className='w-full py-5' />
+              <Input  className='w-full py-5' />
             </div>
           </div>
           <div className='flex w-full items-center justify-start gap-4'>
             <div className='flex w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>Email</Label>
-              <Input placeholder='johnDoe@gmail.com' className='w-full py-5' />
+              <Input  className='w-full py-5' />
             </div>
             <div className='flex w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>Phone Number</Label>
               <Input
                 type='tel'
-                placeholder='+234 123 456 7890'
+                
                 className='w-full py-5'
               />
             </div>
@@ -105,7 +105,7 @@ const Footer = () => {
             <div className='flex w-full flex-col gap-3'>
               <Label className='opacity-70'>Message</Label>
               <Textarea
-                placeholder='Type your message here...'
+                 
                 className='w-full py-5'
               />
             </div>

@@ -3,6 +3,7 @@ import LineThree from '@/components/projects/line-3';
 import About from '@/components/ui/home/about';
 import CardsSection from '@/components/ui/home/cards-section';
 import Footer from '@/components/ui/home/footer';
+import FooterPage from '@/components/ui/home/footer-page';
 import Header from '@/components/ui/home/header';
 import Hero from '@/components/ui/home/hero';
 import Projects from '@/components/ui/home/projects';
@@ -19,20 +20,20 @@ const HomePage = () => {
       <About />
       <Projects />
       <div className='flex w-full items-center justify-center'>
-        <div className='flex flex-col items-center justify-center gap-3'>
-          <p className='opacity-70'>
+        <div className='flex flex-col px-4 items-center justify-center gap-3'>
+          <p className='opacity-70 text-center'>
             Build with me a wondrful project and let s make it happen
           </p>
-          <span className='flex'>
+          <span className='flex text-center'>
             the project will be build with the latest technologies and will be a
             great experience for both of us
             <svg
-              className='ml-2 hidden md:block'
+              className='ml-2 hidden fill-yellow-400 text-yellow-500 md:block'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
               width={20}
               height={20}
-              fill={'none'}
+              fill={'current'}
             >
               <path
                 d='M15 2L15.5387 4.39157C15.9957 6.42015 17.5798 8.00431 19.6084 8.46127L22 9L19.6084 9.53873C17.5798 9.99569 15.9957 11.5798 15.5387 13.6084L15 16L14.4613 13.6084C14.0043 11.5798 12.4202 9.99569 10.3916 9.53873L8 9L10.3916 8.46127C12.4201 8.00431 14.0043 6.42015 14.4613 4.39158L15 2Z'

@@ -97,7 +97,7 @@ const About = () => {
   return (
       <section
         id='about'
-        className='relative -mt-16 md:-mt-36 overflow-hidden px-4 pb-8 pt-8'
+        className='relative -mt-16 md:-mt-36 overflow-hidden px-4  pt-8'
       >
         <div className='mx-auto mb-8 mt-0 flex h-auto max-w-6xl flex-auto flex-col gap-3 sm:mt-32 sm:h-[37.5rem] sm:flex-1 sm:flex-row'>
           <div className='flex h-[37.5rem] flex-auto flex-col gap-3 sm:flex-1'>

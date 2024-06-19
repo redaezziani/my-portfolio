@@ -6,7 +6,7 @@ const cardVariants = {
   initial: { perspective: 600 },
   hover: {
     rotateY: 10,
-    scale: 1.05,
+    scale: 1.03,
     transition: {
       duration: 0.3,
     },
@@ -44,7 +44,7 @@ const MagicCard = ({
   return (
     <AnimatePresence>
       <motion.div
-        className='relative col-span-1 flex w-full select-none flex-col items-start justify-start gap-2'
+        className='relative col-span-1 group flex w-full select-none flex-col items-start justify-start gap-2'
         variants={cardVariants}
         initial='initial'
         whileHover='hover'
@@ -60,27 +60,27 @@ const MagicCard = ({
           {children}
         </motion.div>
         <motion.div
-          className='absolute left-0 z-10 h-52 w-full rounded-lg border border-border bg-slate-50/5'
+          className='absolute left-0 z-10 h-52 w-full rounded-lg border border-border '
           variants={layerVariants}
           custom={1}
           layoutId='card'
         />
         <motion.div
-          className='absolute left-0 z-0 h-52 w-full rounded-lg border border-border bg-slate-50/10'
+          className='absolute left-0 z-0 h-52 w-full rounded-lg border border-border '
           variants={layerVariants}
           custom={2}
           layoutId='card'
         />
         <motion.div
           variants={textVariants}
-          className='mt-4 flex flex-col items-start justify-start gap-2 px-1 pb-8'
+          className=' flex flex-col items-start px-2   justify-start gap-2  pb-8'
         >
           <Link href={link}>
-            <motion.h1 className='text-sm text-slate-800 dark:text-slate-50'>
+            <motion.h1 className='text-sm font-medium group-hover:text-[#1BA0F2] text-slate-800 dark:text-white'>
               {title}
             </motion.h1>
           </Link>
-          <motion.p className='line-clamp-2 text-xs text-slate-400 dark:text-slate-50/40'>
+          <motion.p className='line-clamp-2 text-xs text-slate-500 dark:text-slate-50/40'>
             {description}
           </motion.p>
         </motion.div>

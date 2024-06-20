@@ -79,6 +79,7 @@ const config = {
             backgroundPosition: '-200% 0',
           },
         },
+       
       },
       animation: {
         'background-shine': 'background-shine 2s linear infinite',

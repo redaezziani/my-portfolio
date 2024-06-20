@@ -121,8 +121,9 @@ const Header = () => {
               className='flex cursor-pointer flex-row gap-2 px-4 py-2 sm:px-3'
             >
               <Ro4Logo className='h-6 w-6 fill-slate-900 dark:fill-slate-100' />
-              <span className='flex text-lg font-semibold text-slate-700 dark:text-slate-300 sm:hidden'>
-                Menu
+              <span
+              className=' sr-only'>
+                toggle menu
               </span>
             </Link>
             <div

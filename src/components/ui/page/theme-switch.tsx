@@ -18,13 +18,13 @@ const ThemeSwitch = () => {
   };
   return (
     <div
-      className={`relative flex h-6 w-6 transform cursor-pointer items-center justify-center ${currentTheme === 'dark' ? 'rotate-12' : 'rotate-180'}`}
+      className={`relative flex h-6 w-6  transform cursor-pointer items-center justify-center ${currentTheme === 'dark' ? '' : 'rotate-180'}`}
       onClick={() =>
         handelThemeChange(currentTheme === 'dark' ? 'light' : 'dark')
       }
       aria-label='Toggle theme'
     >
-      {currentTheme !== 'dark' ? (
+      {currentTheme === 'light' ? (
         <SunIcon className='h-[1.2rem] w-[1.2rem]' />
       ) : (
         <MoonIcon className='h-[1.2rem] w-[1.2rem]' />

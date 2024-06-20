@@ -77,35 +77,33 @@ const Footer = () => {
       <FooterLine />
       <section className='flex w-full items-center justify-center'>
         <div className='mt-5 flex w-full flex-col items-start justify-start gap-3 md:w-[55%]'>
-          <div className='flex w-full items-center justify-start gap-4'>
-            <div className='flex w-1/2 flex-col gap-3'>
+          <div className='flex w-full items-center flex-col md:flex-row justify-start gap-4'>
+            <div className='flex w-full md:w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>First Name</Label>
-              <Input  className='w-full py-5' />
+              <Input className='w-full py-5' />
             </div>
-            <div className='flex w-1/2 flex-col gap-3'>
+            <div className='flex w-full md:w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>Last Name</Label>
-              <Input  className='w-full py-5' />
+              <Input className='w-full py-5' />
             </div>
           </div>
-          <div className='flex w-full items-center justify-start gap-4'>
-            <div className='flex w-1/2 flex-col gap-3'>
+          <div className='flex w-full items-center flex-col md:flex-row  justify-start gap-4'>
+            <div className='flex w-full md:w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>Email</Label>
-              <Input  className='w-full py-5' />
+              <Input className='w-full py-5' />
             </div>
-            <div className='flex w-1/2 flex-col gap-3'>
+            <div className='flex w-full  md:w-1/2 flex-col gap-3'>
               <Label className='opacity-70'>Phone Number</Label>
               <Input
                 type='tel'
-                
                 className='w-full py-5'
               />
             </div>
           </div>
-          <div className='flex w-full items-center justify-start gap-4'>
+          <div className='flex w-full items-center  justify-start gap-4'>
             <div className='flex w-full flex-col gap-3'>
               <Label className='opacity-70'>Message</Label>
               <Textarea
-                 
                 className='w-full py-5'
               />
             </div>

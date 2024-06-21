@@ -9,13 +9,13 @@ import Footer from '@/components/ui/page/footer';
 
 const HomePage = () => {
   return (
-    <main className='relative flex flex-col gap-3 items-center justify-start overflow-x-hidden'>
+    <main className='relative flex flex-col items-center justify-start gap-3 overflow-x-hidden'>
       <Header />
       <Hero />
-      <LightBg/>
+      <LightBg />
       <About />
       <CardsSection />
-      <InfoText/>
+      <InfoText />
       <Projects />
       <Footer />
     </main>

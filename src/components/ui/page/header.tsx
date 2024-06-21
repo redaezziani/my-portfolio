@@ -121,10 +121,7 @@ const Header = () => {
               className='flex cursor-pointer flex-row gap-2 px-4 py-2 sm:px-3'
             >
               <Ro4Logo className='h-6 w-6 fill-slate-900 dark:fill-slate-100' />
-              <span
-              className=' sr-only'>
-                toggle menu
-              </span>
+              <span className='sr-only'>toggle menu</span>
             </Link>
             <div
               onClick={() => setMenuOpen(!isMenuOpen)}

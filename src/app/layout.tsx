@@ -3,7 +3,7 @@ import { Roboto } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/lib/provider';
 
-const inter = Roboto({ subsets: ["latin"], weight: [ '400', '500','700'] });
+const inter = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
   title: 'reda ezziani software engineer portfolio',

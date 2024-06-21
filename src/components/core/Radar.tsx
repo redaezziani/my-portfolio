@@ -1,20 +1,18 @@
-"use client";
-import React from "react";
-import { twMerge } from "tailwind-merge";
-import { motion } from "framer-motion";
+'use client';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+import { motion } from 'framer-motion';
 
 export const Radar = ({ className }: any) => {
   const circles = new Array(8).fill(1);
-  
-  
+
   return (
     <div
       className={twMerge(
-        "relative flex h-20 opacity-50 w-20 items-center justify-center rounded-full  ",
+        'relative flex h-20 w-20 items-center justify-center rounded-full opacity-20 dark:opacity-100',
         className
       )}
     >
-      
       {circles.map((circle, idx) => (
         <Circle
           style={{
@@ -23,7 +21,6 @@ export const Radar = ({ className }: any) => {
             border: `1px solid rgba(71, 85, 105, ${1 - (idx + 1) * 0.1})`,
           }}
           key={`motion-${idx}`}
-          
           idx={idx}
         />
       ))}
@@ -31,7 +28,9 @@ export const Radar = ({ className }: any) => {
   );
 };
 
-{/* Creating circles */}
+{
+  /* Creating circles */
+}
 export const Circle = ({ className, children, idx, ...rest }: any) => {
   return (
     <motion.div
@@ -47,10 +46,9 @@ export const Circle = ({ className, children, idx, ...rest }: any) => {
         duration: 0.2,
       }}
       className={twMerge(
-        "absolute inset-0 left-1/2 top-1/2 h-10 w-10  -translate-x-1/2 -translate-y-1/2 transform rounded-full border border-neutral-400/15",
+        'absolute inset-0 left-1/2 top-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 transform rounded-full border border-neutral-400/15',
         className
       )}
     ></motion.div>
   );
 };
-

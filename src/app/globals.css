@@ -1,11 +1,8 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-*{
+* {
   scroll-behavior: smooth;
 }
 @layer base {
@@ -95,11 +92,19 @@
 }
 
 .mask-rect {
-  animation: slidemask 6s ease infinite;
+  animation: slidemask 8s ease infinite;
 }
 
 .mask-rect-2 {
-  animation: slidemask 10s ease infinite;
+  animation: slidemask 8s ease infinite;
+}
+
+.mask-rect-3 {
+  animation: slidemask 8s ease infinite;
+}
+
+.mask-rect-4 {
+  animation: slidemask 8s ease infinite;
 }
 
 /* width */
@@ -117,4 +122,3 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
-

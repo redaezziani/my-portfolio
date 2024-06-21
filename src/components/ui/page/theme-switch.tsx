@@ -18,7 +18,7 @@ const ThemeSwitch = () => {
   };
   return (
     <div
-      className={`relative flex h-6 w-6  transform cursor-pointer items-center justify-center ${currentTheme === 'dark' ? '' : 'rotate-180'}`}
+      className={`relative flex h-6 w-6 transform cursor-pointer items-center justify-center ${currentTheme === 'dark' ? '' : 'rotate-180'}`}
       onClick={() =>
         handelThemeChange(currentTheme === 'dark' ? 'light' : 'dark')
       }

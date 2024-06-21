@@ -169,3 +169,18 @@ export const LinkedInLogo = (props: React.SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
+/*
+<svg width="700.9031px" height="541px" viewBox="0 0 700.9031 541" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group">
+    <g id="Group">
+      <path d="M420.903 278L0 278" id="line-bottom" fill="none" fill-rule="evenodd" stroke="#E6EEF4" stroke-width="1" />
+      <path d="M461.335 285L366.903 285L366.903 540" id="line-center-b" fill="none" fill-rule="evenodd" stroke="#E6EEF4" stroke-width="1" />
+      <path d="M439.903 285C439.903 285 489.903 285 489.903 285C489.903 285 559.903 325 559.903 325L699.903 325" id="Vector" fill="none" fill-rule="evenodd" stroke="#E6EEF4" stroke-width="1" />
+      <path d="M420.903 262L3.05176e-05 262" id="line-top" fill="none" fill-rule="evenodd" stroke="#E6EEF4" stroke-width="1" />
+      <path d="M461.335 255L366.903 255L366.903 0" id="line-center-t" fill="none" fill-rule="evenodd" stroke="#E6EEF4" stroke-width="1" />
+      <path d="M439.903 255C439.903 255 489.903 255 489.903 255C489.903 255 559.903 225 559.903 225L699.903 225" id="Vector" fill="none" fill-rule="evenodd" stroke="#E6EEF4" stroke-width="1" />
+    </g>
+  </g>
+</svg>
+*/

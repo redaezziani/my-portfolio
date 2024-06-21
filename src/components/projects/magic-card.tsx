@@ -44,7 +44,7 @@ const MagicCard = ({
   return (
     <AnimatePresence>
       <motion.div
-        className='relative col-span-1 group flex w-full select-none flex-col items-start justify-start gap-2'
+        className='group relative col-span-1 flex w-full select-none flex-col items-start justify-start gap-2'
         variants={cardVariants}
         initial='initial'
         whileHover='hover'
@@ -60,23 +60,23 @@ const MagicCard = ({
           {children}
         </motion.div>
         <motion.div
-          className='absolute left-0 z-10 h-52 w-full rounded-lg border border-border '
+          className='absolute left-0 z-10 h-52 w-full rounded-lg border border-border'
           variants={layerVariants}
           custom={1}
           layoutId='card'
         />
         <motion.div
-          className='absolute left-0 z-0 h-52 w-full rounded-lg border border-border '
+          className='absolute left-0 z-0 h-52 w-full rounded-lg border border-border'
           variants={layerVariants}
           custom={2}
           layoutId='card'
         />
         <motion.div
           variants={textVariants}
-          className=' flex flex-col items-start px-2   justify-start gap-2  pb-8'
+          className='flex flex-col items-start justify-start gap-2 px-2 pb-8'
         >
           <Link href={link}>
-            <motion.h1 className='text-sm font-medium group-hover:text-[#1BA0F2] text-slate-800 dark:text-white'>
+            <motion.h1 className='text-sm font-medium text-slate-800 group-hover:text-[#1BA0F2] dark:text-white'>
               {title}
             </motion.h1>
           </Link>

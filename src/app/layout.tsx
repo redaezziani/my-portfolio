@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/lib/provider';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const inter = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
+const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
   title: 'reda ezziani software engineer portfolio',
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={''}>
+      <body className={roboto.className}>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'

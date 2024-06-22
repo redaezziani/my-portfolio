@@ -59,7 +59,7 @@ const Header = () => {
   const headerTabs = [
     { name: 'about', link: 'about' },
     { name: 'project', link: 'projects' },
-    { name: 'exhibition', link: 'exhibition' },
+    { name: 'lab ', link: '/lab' },
   ];
 
   const [focused, setFocused] = useState<string | null>(null);

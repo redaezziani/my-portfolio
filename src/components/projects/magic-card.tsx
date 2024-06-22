@@ -42,7 +42,6 @@ const MagicCard = ({
   link = '',
 }: MagicCardProps) => {
   return (
-    <AnimatePresence>
       <motion.div
         className='group relative col-span-1 flex w-full select-none flex-col items-start justify-start gap-2'
         variants={cardVariants}
@@ -85,7 +84,6 @@ const MagicCard = ({
           </motion.p>
         </motion.div>
       </motion.div>
-    </AnimatePresence>
   );
 };
 

@@ -13,14 +13,7 @@ const SecondCard = () => {
         </span>
         <div className='z-10 mt-4 flex items-center justify-start gap-2 px-2 text-sm capitalize text-slate-500 dark:text-slate-200'>
           <div className='z-10 flex h-full w-full flex-col items-start justify-end gap-3'>
-            <h1 className='text-balance text-lg font-medium text-slate-700 dark:text-slate-100'>
-              Designe On your terms and pause anytime.
-            </h1>
-            <p className='text-xs leading-relaxed text-slate-500 dark:text-slate-200/30'>
-              make your designe good and make it a success. Lets build your next
-              project with the best technologies in the market today and make it
-              a success.
-            </p>
+          
           </div>
         </div>
       </div>

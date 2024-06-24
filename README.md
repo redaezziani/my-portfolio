@@ -8,7 +8,6 @@
 - [How to contribute](#-how-to-contribute)
 - [License](#-license)
 
-
 ## 📎 About
 
 This project is a nextjs 14 portfolio template, with a simple and clean design, with a dark mode and light mode, and a contact form with emailjs.
@@ -24,6 +23,7 @@ This project is a nextjs 14 portfolio template, with a simple and clean design, 
 - [Frame Motion](https://www.framer.com/motion/)
 
 ## 🚀 How to run
+
 ```bash
 # Clone this repository
 $ git clone https://github.com/redaezziani/my-portfolio.git

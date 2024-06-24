@@ -3,7 +3,7 @@ import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { motion } from 'framer-motion';
 
-export const Radar = ({ className }: any) => {
+export const Radar = ({ className }: { className: string }) => {
   const circles = new Array(8).fill(1);
 
   return (

@@ -1,8 +1,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { motion, AnimatePresence, MotionProps } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
-//@ts-ignore
 interface ProjectCardProps {
   children?: React.ReactNode;
   className?: string;
@@ -28,7 +27,7 @@ const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(
         {...props}
       >
         <AnimatePresence>
-          <motion.div className='group relative flex h-full w-full select-none flex-col items-end justify-center overflow-hidden rounded-[calc(0.45rem-0.3px)] border border-slate-200 bg-white bg-bottom transition duration-500 hover:border-slate-300 dark:border-slate-900 dark:bg-slate-950 dark:hover:border-slate-800'>
+          <motion.div className="group relative flex size-full select-none flex-col items-end justify-center overflow-hidden rounded-[calc(0.45rem-0.3px)] border border-slate-200 bg-white bg-bottom transition duration-500 hover:border-slate-300 dark:border-slate-900 dark:bg-slate-950 dark:hover:border-slate-800">
             {children}
           </motion.div>
         </AnimatePresence>

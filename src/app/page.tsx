@@ -9,7 +9,7 @@ import Footer from '@/components/ui/page/footer';
 
 const HomePage = () => {
   return (
-    <main className='relative flex flex-col items-center justify-start gap-3 overflow-x-hidden'>
+    <main className="relative flex flex-col items-center justify-start gap-3 overflow-x-hidden">
       <Header />
       <Hero />
       <LightBg />

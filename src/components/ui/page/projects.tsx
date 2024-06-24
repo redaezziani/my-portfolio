@@ -11,33 +11,21 @@ const Projects = () => {
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
-          <img
-            className="aspect-auto w-full object-contain"
-            alt=""
-            src={'/projects/p-1.jpg'}
-          />
+         
         </MagicCard>
         <MagicCard
           title="Ticketing System"
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
-          <img
-            className="aspect-auto w-full object-contain"
-            alt=""
-            src={'/projects/p-1.jpg'}
-          />
+          
         </MagicCard>
         <MagicCard
           title="Ticketing System"
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
-          <img
-            className="aspect-auto w-full object-contain transition-all duration-300 ease-in-out dark:invert"
-            alt=""
-            src={'/projects/p-1.jpg'}
-          />
+          
         </MagicCard>
       </div>
     </div>

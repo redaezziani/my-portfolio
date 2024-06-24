@@ -51,7 +51,7 @@ const MagicCard = ({
       layout
     >
       <motion.div
-        className="border-border relative z-20 flex h-52 w-full items-start justify-center overflow-hidden rounded-lg border bg-slate-50/0"
+        className="border-border relative z-20 flex h-52 w-full items-start justify-center overflow-hidden rounded-lg border bg-slate-50 dark:bg-slate-800"
         variants={layerVariants}
         custom={0}
         layoutId="card"

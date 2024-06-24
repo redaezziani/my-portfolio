@@ -3,11 +3,11 @@ const InfoText = () => {
     <div className="mt-5 flex w-full items-center justify-center">
       <div className="flex flex-col items-center justify-center gap-3 px-4">
         <p className="text-center opacity-70">
-          Build with me a wondrful project and let s make it happen
+        Build a wonderful project with me and let's make it happen.
         </p>
         <span className="flex text-center">
-          the project will be build with the latest technologies and will be a
-          great experience for both of us
+        The project will be built with the latest technologies and will be a
+        great experience for both of us.
           <svg
             className="ml-2 hidden fill-yellow-400 text-yellow-500 md:block"
             xmlns="http://www.w3.org/2000/svg"

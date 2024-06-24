@@ -11,20 +11,22 @@ const Projects = () => {
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
-         
+         <img src="/frame-1.svg" alt="" />
         </MagicCard>
         <MagicCard
           title="Ticketing System"
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
-          
+         <img src="/frame-2.svg" alt="" />
         </MagicCard>
         <MagicCard
           title="Ticketing System"
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
+         <img src="/frame-3.svg" alt="" />
+
         </MagicCard>
       </div>
     </div>

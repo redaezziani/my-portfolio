@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ToastPrimitives from '@radix-ui/react-toast';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { X, CheckCircle, AlertCircle } from 'lucide-react';
+import { X } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 
@@ -46,7 +46,7 @@ const Toast = React.forwardRef<
   (
     {
       className,
-      variant, // Extract variant from props
+      variant, 
       ...props
     },
     ref

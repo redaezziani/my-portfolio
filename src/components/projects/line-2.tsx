@@ -1,6 +1,6 @@
 const LineTow = () => {
   return (
-    <div className="absolute -bottom-2 -left-10 -z-[1] -mt-6 hidden size-96 rotate-90 items-center justify-center p-2 md:flex">
+    <div className="absolute   -right-10 top-12 z-[1] -mt-6 hidden size-96 -rotate-90 items-center justify-center p-2 md:flex">
       <svg
         className="absolute"
         id="efC47UXjIQF1"
@@ -13,14 +13,14 @@ const LineTow = () => {
           d="M300,16.713521L229.607338,92.411913l10.264189,11.547213-9.40884,11.974886-32.503265.427674L150,149.999998L0,263.481725"
           transform="translate(0 0.000002)"
           fill="none"
-          stroke="#fbfeff21"
+          stroke="#fbfeff31"
           strokeWidth="0.6"
         />
         <path
           d="M235.167105,109.946569l47.044198,30.151056v128.943871"
           transform="translate(.000002 0)"
           fill="none"
-          stroke="#fbfeff21"
+          stroke="#fbfeff31"
           strokeWidth="0.6"
         />
       </svg>
@@ -72,7 +72,7 @@ const LineTow = () => {
           d="M300,16.713521L229.607338,92.411913l10.264189,11.547213-9.40884,11.974886-32.503265.427674L150,149.999998L0,263.481725"
           transform="translate(0 0.000002)"
           fill="none"
-          stroke="#1B8EF2"
+          stroke="#b00000e4"
           strokeWidth="0.6"
         />
         <path
@@ -80,7 +80,7 @@ const LineTow = () => {
           d="M235.167105,109.946569l47.044198,30.151056v128.943871"
           transform="translate(.000002 0)"
           fill="none"
-          stroke="#1B8EF2"
+          stroke="#b00000e4"
           strokeWidth="0.6"
         />
       </svg>

@@ -21,11 +21,11 @@ const Projects = () => {
          <img src="/frame-2.svg" alt="" />
         </MagicCard>
         <MagicCard
-          title="Ticketing System"
-          description="A ticketing system for a company to manage their customer support."
-          link=""
+          title="Blog Website Mdx Nextjs"
+          description="This is a blog website built with Nextjs and Mdx seo friendly with tailwindcss."
+          link="https://dev-hub-liard.vercel.app/"
         >
-         <img src="/frame-3.svg" alt="" />
+         <img src="/project/project-3.png" alt="project-card" />
 
         </MagicCard>
       </div>

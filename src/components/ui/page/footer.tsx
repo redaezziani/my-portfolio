@@ -41,9 +41,9 @@ const Footer = () => {
     }
   };
   return (
-    <footer className="z-40 mx-auto mb-8 mt-0 flex h-auto w-full max-w-[74rem] flex-auto flex-col gap-4 px-3 sm:h-[37.5rem] sm:flex-1 md:p-0">
-      <div className="flex w-full flex-col items-center justify-center gap-3 text-center">
-        <h3 className="flex items-center justify-center gap-2 font-medium text-slate-900 md:text-4xl dark:text-slate-50">
+    <footer className=" mt-20 mx-auto mb-8  flex h-auto w-full flex-auto flex-col gap-4 md:p-0">
+      <div className="flex w-full flex-col items-center justify-start gap-3 text-center">
+        <h3 className="flex items-start w-full text-start justify-start gap-2 font-medium text-slate-900 md:text-2xl dark:text-slate-50">
           Lets Have a Chat
           <span>
             <svg
@@ -69,30 +69,30 @@ const Footer = () => {
             </svg>
           </span>
         </h3>
-        <p className="flex items-center justify-center gap-2 text-sm font-normal text-slate-900 opacity-70 dark:text-slate-50">
-          Questions about our services or want to start a project? <br /> Send
-          me a message and I will get back to you as soon as possible
+        <p className="flex items-center justify-center text-start gap-2 text-sm font-normal text-slate-900 opacity-70 dark:text-slate-50">
+          Questions about our services or want to start a project? 
+         
         </p>
       </div>
       <FooterLine />
       <section className="flex w-full items-center justify-center">
-        <div className="mt-5 flex w-full flex-col items-start justify-start gap-3 md:w-[55%]">
-          <div className="flex w-full flex-col items-center justify-start gap-4 md:flex-row">
-            <div className="flex w-full flex-col gap-3 md:w-1/2">
+        <div className="mt-5 flex w-full flex-col items-start justify-start gap-3">
+          <div className="flex w-full flex-col flex-wrap items-center justify-start gap-4 ">
+            <div className="flex w-full flex-col gap-3 ">
               <Label className="opacity-70">First Name</Label>
               <Input className="w-full py-5" />
             </div>
-            <div className="flex w-full flex-col gap-3 md:w-1/2">
+            <div className="flex w-full flex-col gap-3">
               <Label className="opacity-70">Last Name</Label>
               <Input className="w-full py-5" />
             </div>
           </div>
-          <div className="flex w-full flex-col items-center justify-start gap-4 md:flex-row">
-            <div className="flex w-full flex-col gap-3 md:w-1/2">
+          <div className="flex w-full flex-col items-center justify-start gap-4 flex-wrap">
+            <div className="flex w-full flex-col gap-3 ">
               <Label className="opacity-70">Email</Label>
               <Input className="w-full py-5" />
             </div>
-            <div className="flex w-full flex-col gap-3 md:w-1/2">
+            <div className="flex w-full flex-col gap-3">
               <Label className="opacity-70">Phone Number</Label>
               <Input type="tel" className="w-full py-5" />
             </div>
@@ -106,7 +106,7 @@ const Footer = () => {
           <Button
             onClick={handleSendEmail}
             disabled={isSending}
-            className="w-full py-5"
+            className="w-full mt-5 py-5"
             variant={'gradient'}
           >
             Send Message

@@ -11,22 +11,27 @@ const Projects = () => {
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
-         <img src="/frame-1.svg" alt="" />
+         <img
+         className=' border-b border-border  max-h-[14rem]'
+         src="/frame-1.svg" alt="" />
         </MagicCard>
         <MagicCard
           title="Ticketing System"
           description="A ticketing system for a company to manage their customer support."
           link=""
         >
-         <img src="/frame-2.svg" alt="" />
+         <img
+          className=' border-b border-border  max-h-[14rem]'
+          src="/frame-2.svg" alt="" />
         </MagicCard>
         <MagicCard
           title="Blog Website Mdx Nextjs"
           description="This is a blog website built with Nextjs and Mdx seo friendly with tailwindcss."
           link="https://dev-hub-liard.vercel.app/"
         >
-         <img src="/project/project-3.png" alt="project-card" />
-
+         <img
+          className=' border-b border-border max-h-[14rem]'
+         src="/project/project-3.png" alt="project-card" />
         </MagicCard>
       </div>
     </div>

@@ -21,7 +21,7 @@ const layerVariants = {
 };
 
 const textVariants = {
-  initial: { opacity: 0.6, y: 20 },
+  initial: { opacity: 1, y: 20 },
   hover: {
     opacity: 1,
     y: 0,
@@ -43,43 +43,26 @@ const MagicCard = ({
 }: MagicCardProps) => {
   return (
     <motion.div
-      className="group relative col-span-1 flex w-full select-none flex-col items-start justify-start gap-2"
+      className="group border border-border rounded-lg relative col-span-1 flex w-full select-none flex-col items-start justify-start gap-2"
       variants={cardVariants}
       initial="initial"
       whileHover="hover"
       whileTap={{ scale: 0.95 }}
       layout
     >
-      <motion.div
-        className="border-border relative z-20 flex h-52 w-full items-start justify-center overflow-hidden rounded-lg border bg-slate-50 dark:bg-slate-800"
-        variants={layerVariants}
-        custom={0}
-        layoutId="card"
-      >
+      
         {children}
-      </motion.div>
-      <motion.div
-        className="border-border absolute left-0 z-10 h-52 w-full rounded-lg border"
-        variants={layerVariants}
-        custom={1}
-        layoutId="card"
-      />
-      <motion.div
-        className="border-border absolute left-0 z-0 h-52 w-full rounded-lg border"
-        variants={layerVariants}
-        custom={2}
-        layoutId="card"
-      />
+     
       <motion.div
         variants={textVariants}
         className="flex flex-col items-start justify-start gap-2 px-2 pb-8"
       >
         <Link href={link}>
-          <motion.h1 className="text-sm font-medium text-slate-800 group-hover:text-[#1BA0F2] dark:text-white">
+          <motion.h1 className="text-sm font-medium text-slate-800 group-hover:text-[#1b4df2] dark:text-white">
             {title}
           </motion.h1>
         </Link>
-        <motion.p className="line-clamp-2 text-xs text-slate-500 dark:text-slate-50/40">
+        <motion.p className="line-clamp-2 text-xs font-medium text-slate-500 dark:text-slate-50/40">
           {description}
         </motion.p>
       </motion.div>

@@ -5,7 +5,6 @@ import About from '@/components/ui/page/about';
 import CardsSection from '@/components/ui/page/cards-section';
 import InfoText from '@/components/ui/page/info-text';
 import Projects from '@/components/ui/page/projects';
-import Footer from '@/components/ui/page/footer';
 
 const HomePage = () => {
   return (
@@ -17,7 +16,6 @@ const HomePage = () => {
       <CardsSection />
       <InfoText />
       <Projects />
-      <Footer />
     </main>
   );
 };

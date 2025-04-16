@@ -86,7 +86,7 @@ export const TagsContainer = () => {
 // PortfolioCard.jsx
 export const ThirdCard = () => {
   return (
-    <div className="relative flex size-full select-none flex-col items-start justify-start gap-3 rounded-lg border-slate-700/25 bg-gradient-to-tl from-slate-500/40 to-transparent p-px">
+    <div className="relative overflow-hidden flex size-full select-none flex-col items-start justify-start gap-3 rounded-lg border-slate-700/25 bg-gradient-to-tl from-slate-500/40 to-transparent p-px">
       <div className="group relative flex size-full select-none flex-col items-start justify-start overflow-hidden rounded-[calc(0.45rem-0.3px)] border border-slate-200 bg-gradient-to-br from-[#020406] via-[#03111a] to-[#0c313f] bg-bottom p-2 transition duration-500 hover:border-slate-300 dark:border-slate-900 dark:bg-slate-950 dark:hover:border-slate-800">
         <div className="bg-primary/40 absolute -right-11 -top-11 flex size-60 rounded-full blur-[100px]" />
 

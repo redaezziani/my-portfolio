@@ -19,7 +19,7 @@ const Projects = () => {
         <MagicCard
           title="Manga Website"
           description="Microservices architecture with RabbitMQ and Docker , Nestjs and Nextjs."
-          link=""
+          link="https://github.com/redaezziani/robox-manga"
         >
          <img
           className=' border-b border-border  max-h-[14rem]'
